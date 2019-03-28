@@ -1,0 +1,42 @@
+{
+  "name": "node-core",
+  "version": "1",
+  "description": "Node core",
+  "main": "src/app.js",
+  "repository": "https://github.com/duongxuannam",
+  "scripts": {
+    "build": "babel src -s -D -d dist",
+    "start": "node dist/app.js",
+    "dev": "nodemon --watch src src/app.js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nam Duong",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "4.17.11",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.0",
+    "puppeteer": "^1.13.0",
+    "socket.io": "^2.2.0",
+    "validator": "^10.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9",
+    "run-rs": "^0.4.0"
+  }
+}
