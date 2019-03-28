@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "name": "server",
+            "script": "NODE_ENV=production node dist/app.js",
+            "watch": true,
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+}
